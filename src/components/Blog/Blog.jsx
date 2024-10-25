@@ -37,6 +37,7 @@ function Blog() {
 
         <section className="blogs__section">
             <h2 className="blogs__title">Latest Blogs</h2>
+                <button className="blogs__explore-button">Explore More</button>
             <div className="blogs__posts">
                 {blogPosts.map(post => (
                     <div key={post.id} className="blogs__post">
@@ -46,7 +47,6 @@ function Blog() {
                     </div>
                 ))}
             </div>
-            <button className="blogs__explore-button">Explore More</button>
         </section>
     );
 }

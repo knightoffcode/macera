@@ -11,25 +11,25 @@ function Tour() {
         {
             id: 1,
             title: "Cappadocia Hot Air Balloon Ride",
-            description: "Experience breathtaking views of Cappadocia's unique landscape from a hot air balloon.",
+            description: "",
             imageUrl: 'https://via.placeholder.com/300x200',
         },
         {
             id: 2,
             title: "Istanbul City Tour",
-            description: "Explore the rich history of Istanbul, including visits to Hagia Sophia and the Grand Bazaar.",
+            description: "",
             imageUrl: 'https://via.placeholder.com/300x200',
         },
         {
             id: 3,
             title: "Pamukkale Thermal Springs",
-            description: "Relax in the natural thermal springs and enjoy the stunning white travertine terraces.",
+            description: "",
             imageUrl: 'https://via.placeholder.com/300x200',
         },
         {
             id: 4,
             title: "Ephesus Ancient Ruins",
-            description: "Discover the ancient city of Ephesus and its remarkable archaeological sites.",
+            description: "",
             imageUrl: 'https://via.placeholder.com/300x200',
         },
     ];

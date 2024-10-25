@@ -2,12 +2,19 @@
 
     &__section {
         padding: 40px;
-        background-color: #f8f8f8;
+        background-color: #2626263b;
         text-align: center;
+        height: 70vh;
+        border-radius: 1rem;
+        margin: 3rem auto;
+        position: relative;
+
+        color: #fff;
+        // border: 2px solid #fff;
     }
 
     &__title {
-        font-size: 2.5rem;
+        font-size: 2.5rem;  
         margin-bottom: 20px;
     }
 
@@ -15,7 +22,7 @@
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
-        gap: 1rem;
+        gap: 1.2rem;
     }
 
     &__post {
@@ -41,7 +48,7 @@
 
     &__post-title {
         font-size: 1.5rem;
-        margin: 10px 0;
+        margin: 10px 0 0;
     }
 
     &__excerpt {
@@ -54,12 +61,14 @@
         background-color: red;
         color: white;
         padding: 10px 20px;
-        margin: 2rem 0 0;
         border: none;
         border-radius: 5px;
         cursor: pointer;
         font-size: 1.2rem;
         transition: background-color 0.3s ease;
+        position: absolute;
+        right: 2.2rem;
+        top: 2rem;
 
         &:hover {
             background-color: darkred;
