@@ -8,5 +8,22 @@
         './Components/Input',
         './Components/Modal',
         './Components/Breadcrumb',
+        './Components/History',
+        './Components/Tour',
+        './Components/Blog',
         './Mixins',
         './Reset';
+
+
+body {
+    background: url("../assets/Home/Background/B1.png");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/Home/Background/B1.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    scrollbar-width: none;
+}
+
+.home-page {
+    height: 80vh;
+}
+

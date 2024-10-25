@@ -1,8 +1,7 @@
-/* Seção principal que envolve o banner */
 .highlight__section {
     position: relative;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -19,13 +18,13 @@
     width: 100%;
     max-width: 1200px;
     overflow-y: scroll;
-    scroll-snap-type: y mandatory;
+    scrollbar-width: none;
+    overflow-y: scroll;
 }
 
-/* Conteúdo textual dentro do wrapper */
 .highlight__content {
     width: 100%;
-    min-height: 100vh;
+    min-height: 80vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -33,18 +32,24 @@
     color: white;
     scroll-snap-align: start;
     padding: 20px;
+
+}
+.highlight__content::-webkit-scrollbar {
+    display: none;
 }
 
 .highlight__title {
     font-size: 3rem;
     font-weight: bold;
     margin-bottom: 20px;
+    max-width: 400px;
 }
 
 .highlight__description {
     font-size: 1.2rem;
     margin-bottom: 30px;
     line-height: 1.5;
+    max-width: 420px;
 }
 
 .highlight__button {
@@ -63,14 +68,14 @@
 }
 
 /* Imagem que está dentro do wrapper */
-.highlight__image-wrapper {
-    width: 100%;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    scroll-snap-align: start;
-}
+// .highlight__image-wrapper {
+//     width: 100%;
+//     min-height: 100vh;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     scroll-snap-align: start;
+// }
 
 .highlight__image {
     max-width: 100%;
@@ -78,7 +83,6 @@
     border-radius: 12px;
 }
 
-/* Barra de progresso no canto direito */
 .progress__bar {
     position: absolute;
     right: 20px;
@@ -95,4 +99,35 @@
     height: 50%;
     background-color: rgb(255, 255, 255);
     border-radius: 5px;
+}
+
+
+/* Estilização da barra de rolagem do highlight__wrapper */
+
+/* WebKit (Chrome, Safari, Edge) */
+
+// /* Firefox */
+.highlight__wrapper::-webkit-scrollbar {
+       display: none;
+         scrollbar-width: none;
+}
+
+.highlight__images-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    width: 100%;
+    padding: 2rem 0;
+}
+
+.highlight__image-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.highlight__grid-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
 }
